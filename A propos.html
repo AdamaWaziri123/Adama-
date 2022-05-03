@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap défilé d'imagess</title
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+/* Custom style to prevent carousel from being distorted 
+   if for some reason image doesn't load */
+.carousel-item{
+    min-height: 180px;
+}
+
+</style>
+<style>
+  <style>
+  
+  body {
+
+font-family: Montserrat, "sans-serif";
+display: flex;
+justify-content: center;
+color: #303030;
+}
+
+.contactez-nous {
+width: 400px;
+border: 1px solid;
+border-radius: 8px;
+padding: 0 50px 0 50px;
+background: white;
+}
+
+.contactez-nous > h1 {
+font-weight: 200;
+}
+
+.contactez-nous > p {
+font-weight: 300;
+}
+
+form div {
+width: 100%;
+display: flex;
+flex-direction: column;
+min-height: 83px;
+margin-top: 25px;
+}
+
+form div > label {
+margin-bottom: 7px;
+font-weight: 600;
+}
+
+form div > input, form div > select, form div > textarea {
+background: #afc534;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 500;
+font-family: Montserrat, "sans-serif";
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+form div > input, form div > select {
+height: 50px;
+padding-left: 10px;
+}
+
+form div > select {
+appearance: none;
+background-size: 15px;
+background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+background-position: center 10px top 50%;
+background-repeat: no-repeat;
+}
+
+form div > textarea {
+height: 100px;
+padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+color: white;
+}
+
+form div > select:invalid {
+color: white;
+}
+
+form div > select option {
+background: white;
+color: #303030;
+}
+
+form div:last-child {
+align-items:center;
+margin-top: 20px;
+}
+
+form button {
+width: 450px;
+max-width: 500px;
+height: 60px;
+font-weight: 400;
+font-size: 28px;
+background: white;
+border: rgba(48, 48, 48, 0.5) solid 1px;
+border-radius: 5px;
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+color: #303030;
+}
+</style>
+
+
+</style>
+</head>
+  <body style="background-color: rgb(194, 191, 53);"></body>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Ada créa</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="page d'acceuil.html" class="nav-item nav-link active">Acceuil</a>
+                    <a href="Presentation personnelle.html" class="nav-item nav-link">Présentation</a>
+                    <a href="Réalisations.html" class="nav-item nav-link">Réalisations</a >
+                </div>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                    </div>
+                </form>
+                <div class="navbar-nav">
+                    <a href="CV.html" class="nav-item nav-link">CV</a>
+                    <a href="A propos.html" class="nav-item nav-link">A propos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div>
+  <br> <br>
+<div class="contactez-nous">
+  <h2>Contactez-nous</h2>
+  <form action="/page-traitement-donnees" method="post">
+    <div>
+      <label for="nom" style="width:115px;">Votre nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Waziri" required>
+    </div>
+    <div>
+      <label for="email" style="width:115px;">Votre e-mail</label>
+      <input type="email" id="email" name="email" placeholder="waziri.adamaa@mail.com" required>
+    </div>
+    
+    <div>
+      <label for="message" style="width:115px;">Votre message</label>
+      <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+    </div>
+    <div >
+      <button type="submit">Envoyer mon message</button>
+    </div>
+  </form>
+</div>
+    
+</body>
+</html>
